@@ -1,0 +1,4 @@
+C:\ffmpeg\bin\ffmpeg.exe -f concat -i "C:/Users/Micro/Desktop/rpi/list.txt" -r 24 -vcodec libx264 -filter:v "setpts=0.015625*PTS" -preset ultrafast -threads 0 -g 48  "C:\Users\Micro\Desktop\output2.mp4"
+
+C:\ffmpeg\bin\ffmpeg.exe -i C:\Users\Micro\Desktop\rpi\20180503_0121.avi -ss 00:03:16 -c copy -t 00:10:00.0 C:\Users\Micro\Desktop\20180503_0121-2.avi
+C:\ffmpeg\bin\ffmpeg.exe -i C:\Users\Micro\Desktop\rpi\20180503_0121.avi -ss 00:00:00 -c copy -t 00:03:10 C:\Users\Micro\Desktop\20180503_0121-1.avi
